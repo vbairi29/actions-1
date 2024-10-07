@@ -9,22 +9,30 @@ jobs:
         steps:
         - name: Checkout main
           uses: actions/checkout@v4
+
+        - name: list all files
+          run: ls -ltra
+
+        - name: execution on script
+          run: ./ascii_script.sh
+
+
         
-        - name: Install cowsay package
-          run: |
-            sudo apt-get update 
-            sudo apt-get install cowsay -y
+        # - name: Install cowsay package
+        #   run: |
+        #     sudo apt-get update 
+        #     sudo apt-get install cowsay -y
 
-        - name: execute cowsay command
-          run: cowsay -f dragon "I am a dragon from new city and a NEW DRAGON ...... Hee..heee...!!!" >> dragon.txt
+        # - name: execute cowsay command
+        #   run: cowsay -f dragon "I am a dragon from new city and a NEW DRAGON ...... Hee..heee...!!!" >> dragon.txt
 
-        - name: check if dragon name exists
-          run: grep -i "dragon" dragon.txt
+        # - name: check if dragon name exists
+        #   run: grep -i "dragon" dragon.txt
 
-        - name: read dragon text file
-          run: |
-           ls -ltra
-           cat dragon.txt
+        # - name: read dragon text file
+        #   run: |
+        #    ls -ltra
+        #    cat dragon.txt
         
         
         # - name: Welcome message
