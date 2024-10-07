@@ -1,16 +1,34 @@
 name: Generate ASCII Artwork
 
-on: push
+on: 
+  push
 
 jobs:
-    first_job:
+    Generate_ASCII_job:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout main
           uses: actions/checkout@v4
         
-        - name: Welcome message
+        - name: Install cowsay package
           run: |
-           echo "This is my ASCII actions"
+            sudo apt-get update 
+            sudo apt-get install cowsay -y
+
+        - name: execute cowsay command
+          run: cowsay -f dragon "I am a dragon from new city and a NEW DRAGON ...... Hee..heee...!!!" >> dragon.txt
+
+        - name: check if dragon name exists
+          run: grep -i "dragon" dragon.txt
+
+        - name: read dragon text file
+          run: |
            ls -ltra
-           cat README.md
+           cat dragon.txt
+        
+        
+        # - name: Welcome message
+        #   run: |
+        #    echo "This is my ASCII actions"
+        #    ls -ltra
+        #    cat README.md
