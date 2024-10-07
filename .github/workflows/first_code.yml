@@ -6,11 +6,12 @@ jobs:
         steps:
         - name: checkout
           uses: actions/checkout@v4
+        
         - name: Welcome Page
           run: echo "my first step"
 
         - name: list files
-          run: ls -l
+          run: ls -a
         
         - name: readme file
           run: cat README.md
