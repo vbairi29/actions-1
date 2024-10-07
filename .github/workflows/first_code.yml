@@ -4,14 +4,23 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps:
-        - name: checkout
+        - name: checkout repo
           uses: actions/checkout@v4
-        
-        - name: Welcome Page
-          run: echo "my first step"
 
-        - name: list files
-          run: ls -a
+        - name: List and read
+          run: |
+            echo "my first GitHub Action job"
+            ls -ltra
+            cat README.md
+
+        - name: generate ASCII
+          run: cowsay -f dragon "I am a dragon from new city" >> dragon.txt
         
-        - name: readme file
-          run: cat README.md
+        # - name: Welcome Page
+        #   run: echo "my first GitHub Action job"
+
+        # - name: list files
+        #   run: ls -a
+        
+        # - name: readme file
+        #   run: cat README.md
