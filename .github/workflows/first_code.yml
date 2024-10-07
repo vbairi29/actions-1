@@ -13,7 +13,7 @@ jobs:
             ls -ltra
             cat README.md
 
-        - name: generate ASCII
+        - name: generate ASCII artwork
           run: cowsay -f dragon "I am a dragon from new city" >> dragon.txt
         
         # - name: Welcome Page
