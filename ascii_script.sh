@@ -1,8 +1,8 @@
 #!/bin/bash  
-BLUE='\033[0;34m'
-WHITE= '\033[0;37m' 
-RED= '\033[0;31m'
-ORANGE= '\033[0;33m'
+# BLUE='\033[0;34m'
+# WHITE= '\033[0;37m' 
+# RED= '\033[0;31m'
+# ORANGE= '\033[0;33m'
 #echo -e "${Blue}Welcome ${WHITE}to ${RED}France"
 # sudo apt-get update 
 echo -e "\033[0;33m####### Instaling Cowsay package #######"
@@ -20,10 +20,12 @@ date
 
 ###echo "\e[1;31mHello World!\e[0m"
 #!/bin/bash
-echo -e "\033[0;33mSample text"
-echo -e "\033[1;33mBold text"
-echo -e "\033[2;33mLow intensity text"
-echo -e "\033[4;33mUnderline text"
-echo -e "\033[5;33mBlinking text"
-echo -e "\033[8;33mInvisible text"
-echo -e "\033[9;33mStrikethrough text"
+# echo -e "\033[0;33mSample text"
+# echo -e "\033[1;33mBold text"
+# echo -e "\033[2;33mLow intensity text"
+# echo -e "\033[4;33mUnderline text"
+# echo -e "\033[5;33mBlinking text"
+# echo -e "\033[8;33mInvisible text"
+# echo -e "\033[9;33mStrikethrough text"
+### 
+### https://stackabuse.com/how-to-change-the-output-color-of-echo-in-linux/
