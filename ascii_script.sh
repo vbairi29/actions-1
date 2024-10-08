@@ -1,15 +1,20 @@
+#!/bin/bash  
+BLUE='\033[0;34m'
+WHITE= '\033[0;37m' 
+RED= '\033[0;31m'
+#echo -e "${Blue}Welcome ${WHITE}to ${RED}France"
 # sudo apt-get update 
-/bin/echo -e "\e[5m;0;34 ####### Instaling Cowsay package #######\e[0m"
+echo -e "${Blue}####### Instaling Cowsay package #######"
 sudo apt-get install cowsay -y
-/bin/echo -e "\e[5m;0;31 ####### Executing Cowsay CMD #######\e[0m"
+echo -e "${Blue} ####### Executing Cowsay CMD #######"
 cowsay -f dragon "I am a dragon from new city and a NEW DRAGON ...... Hee..heee...!!!" >> dragon.txt
-/bin/echo -e "\e[5m;1;30 ####### Search dragon word  #######\e[0m"
+echo -e "${Blue} ####### Search dragon word  #######"
 grep -i "dragon" dragon.txt
-/bin/echo -e "\e[5m;0:33 ####### List all files  #######\e[0m"
+echo -e "${WHITE} ####### List all files  #######"
 ls -ltra
-/bin/echo -e "\e[5m;1;33 ####### read dragon file  #######\e[0m"
+echo -e "${Blue} ####### read dragon file  #######"
 cat dragon.txt
-/bin/echo -e "\e[5m;0:36 ####### Todays date  #######\e[0m"
+echo -e "${RED} ####### Todays date  #######"
 date
 
 ###echo "\e[1;31mHello World!\e[0m"
