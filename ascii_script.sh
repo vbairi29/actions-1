@@ -18,3 +18,11 @@ echo -e "${RED} ####### Todays date  #######"
 date
 
 ###echo "\e[1;31mHello World!\e[0m"
+#!/bin/bash
+echo -e "\033[0;33mSample text"
+echo -e "\033[1;33mBold text"
+echo -e "\033[2;33mLow intensity text"
+echo -e "\033[4;33mUnderline text"
+echo -e "\033[5;33mBlinking text"
+echo -e "\033[8;33mInvisible text"
+echo -e "\033[9;33mStrikethrough text"
