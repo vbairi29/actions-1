@@ -1,13 +1,15 @@
 # sudo apt-get update 
-echo -e "\e[5m;0;34 ####### Instaling Cowsay package #######"
+/bin/echo -e "\e[5m;0;34 ####### Instaling Cowsay package #######\e[0m"
 sudo apt-get install cowsay -y
-echo -e "\e[5m;0;31 ####### Executing Cowsay CMD #######"
+/bin/echo -e "\e[5m;0;31 ####### Executing Cowsay CMD #######\e[0m"
 cowsay -f dragon "I am a dragon from new city and a NEW DRAGON ...... Hee..heee...!!!" >> dragon.txt
-echo -e "\e[5m;1;30 ####### Search dragon word  #######"
+/bin/echo -e "\e[5m;1;30 ####### Search dragon word  #######\e[0m"
 grep -i "dragon" dragon.txt
-echo -e "\e[5m;0:33 ####### List all files  #######"
+/bin/echo -e "\e[5m;0:33 ####### List all files  #######\e[0m"
 ls -ltra
-echo -e "\e[5m;1;33 ####### read dragon file  #######"
+/bin/echo -e "\e[5m;1;33 ####### read dragon file  #######\e[0m"
 cat dragon.txt
-echo -e "\e[5m;0:36 ####### Todays date  #######"
+/bin/echo -e "\e[5m;0:36 ####### Todays date  #######\e[0m"
 date
+
+###echo "\e[1;31mHello World!\e[0m"
